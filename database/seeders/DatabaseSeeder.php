@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Movie;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,8 +14,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        // 作成した MovieSeeder を呼び出す
         $this->call([
-            // ここに Seeder を追加する
+            MovieSeeder::class,  // MovieSeeder を実行
         ]);
     }
 }
